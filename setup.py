@@ -1,11 +1,12 @@
 import pathlib
-from setuptools import setup
+from setuptools import setup, find_packages
 
 # The directory containing this file
 HERE = pathlib.Path(__file__).parent
 
 # The text of the README file
-README = (HERE / "README.md").read_text()
+with open(HERE / "README.md", "r", encoding="utf-8") as readme_file:
+    README = readme_file.read()
 
 # This call to setup() does all the work
 setup(
@@ -13,7 +14,7 @@ setup(
     version="1.1.1",
     description="Topsis-Rohan-102103108",
     long_description=README,
-    long_description_content_type="text/markdown",
+    long_description_content_type="text/markdown",  # Specify the content type
     url="https://github.com/Rohan1405/Topsis-Rohan-102103108",
     author="Rohan Gulati",
     author_email="gulatirohan2003@gmail.com",
@@ -24,12 +25,12 @@ setup(
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
     ],
-    packages=["Topsis"],
+    packages=find_packages(),
     include_package_data=True,
     install_requires=[],
     entry_points={
         "console_scripts": [
-            "Topsis=Topsis.__main__:main",
+            "Topsis=Topsis.__main__:main",  # Update the module path
         ]
     },
 )

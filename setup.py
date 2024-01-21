@@ -10,11 +10,11 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="Topsis-Rohan-102103108",
-    version="1.1",
+    version="1.1.1",
     description="Topsis-Rohan-102103108",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/gandhi25samar/Topsis-Rohan-102103108.git",
+    url="https://github.com/Rohan1405/Topsis-Rohan-102103108",
     author="Rohan Gulati",
     author_email="gulatirohan2003@gmail.com",
     license="MIT",

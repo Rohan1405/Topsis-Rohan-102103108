@@ -17,7 +17,7 @@ To use the library, provide the CSV filename with the ".csv" extension, the weig
 
 Example:
 ```bash
-Topsis sample.csv "1,1,1,2,2" "+,+,-,+,+" result.csv**
+Topsis sample.csv "1,1,1,2,2" "+,+,-,+,+" result.csv
 ```
 
 ## Input (sample.csv)
